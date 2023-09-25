@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+<body>
+    <div ng-app="">  
+        <form>  
+          Check to show this:  
+          <input type="checkbox" ng-model="myVar">  
+        </form>  
+        <h1 ng-show="myVar">Checked</h1>  
+      </div>  
+      <p>The ng-show attribute is set to true when the checkbox is checked.</p>
+</body>
+</html>
+
+DDL – Data Definition Language
+Create DB:
+    CREATE DATABASE myTodo;
+Drop DB:
+    DROP DATABASE myTodo;
+Create table : 
+    CREATE TABLE Todo (
+    id int,
+    description varchar(255),
+    isComplete boolean default false,
+);
+Drop table: 
+    DROP TABLE Todo;
+DML – Data Manipulation Language
+C - INSERT INTO Todo VALUES (1, "swim", false); 
+R - SELECT * FROM Todo;
+U - UPDATE Todo SET isComplete = true WHERE id = 1;
+D - DELETE FROM Todo WHERE id = 1;
